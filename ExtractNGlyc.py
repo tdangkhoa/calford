@@ -57,13 +57,13 @@ def writeOutputPos(data):
    TRACE5("Done writing position data")
 
 def renameProtein(proteinDesc):
-   # rename protein by adding a suffix ".transformed"
+   # rename protein by adding a prefix "D."
    pnRe = re.compile("(\S+)(.*)")
    m = pnRe.match(proteinDesc)
    if m==None:
       TRACE0("Parsing error when renaming protein: %s"%proteinDesc)
       return proteinDesc
-   newDesc = m.group(1)+".transformed"+str(m.group(2))
+   newDesc = "D."+m.group(1)+str(m.group(2))
    return newDesc
 
 def transformProtein(proteinId,seq,positions):
