@@ -25,6 +25,9 @@ config = {
    'sigpepQueryHost':'sigpep.services.came.sbg.ac.at',
    'sigpepQueryPrefix':'/cgi-bin',
    'sigpepQuerySelector':'signalblast.cgi',
+   'netNGlycHost':'genome.cbs.dtu.dk',
+   'netNGlycPrefix':'/cgi-bin',
+   'netNGlycSelector':'webface2.fcgi',
    'minBackoff':'2',
    'maxBackoff':'100',
 }
